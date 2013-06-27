@@ -25,4 +25,12 @@ describe Matrix do
   it "calculates the adjacent value northwest" do
     @matrix.calculate_adjacent_north_west(10, 12).should eq(1788696)
   end
+  
+  it "calculates the adjacent value northeast" do
+    @matrix.calculate_adjacent_north_east(7, 9).should eq(26*75*36*56)
+  end
+  
+  it "calculates the adjacent value southwest" do
+    @matrix.calculate_adjacent_south_west(7, 9).should eq(0)
+  end
 end
